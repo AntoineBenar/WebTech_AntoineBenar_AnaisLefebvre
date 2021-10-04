@@ -1,1 +1,3 @@
-# Bienvenue dans notre  répo ;)
+# Membres du groupe:
+# Antoine Bénar
+# Anaïs Lefebvre
