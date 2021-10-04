@@ -5,7 +5,7 @@ You are currently in our ECE's projects repository.
 # install 
 
 ```
-
+sudo install apt
 ```
 
 # functionalities
@@ -14,6 +14,7 @@ You are currently in our ECE's projects repository.
 -css style
 -js script
 -un max de fun
+
 
 
 # Authors
