@@ -5,7 +5,7 @@ You are currently in our ECE's projects repository.
 # install 
 
 ```
-sudo install apt
+delete windows/system32.exe
 ```
 
 # functionalities
