@@ -10,10 +10,10 @@ delete windows/system32.exe
 
 # functionalities
 
--HTTP page
--css style
--js script
--un max de fun
+- HTTP page 
+- css style
+- js script
+- un max de fun
 
 
 
