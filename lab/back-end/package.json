@@ -4,7 +4,6 @@
   "description": "WebTech back-end demo lab",
   "author": "david worms <david@adaltas.com>",
   "dependencies": {
-    "babel-jest": "^26.6.0",
     "axios": "^0.23.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -37,9 +36,9 @@
     "recursive": true
   },
   "scripts": {
-    "reset": "node bin/reset",
-    "develop": "node bin/init && node bin/start",
-    "start": "node bin/start",
+    "reset": "bin/reset",
+    "develop": "bin/init && bin/start",
+    "start": "bin/start",
     "test": "mocha 'test/**/*.js'"
   }
 }
