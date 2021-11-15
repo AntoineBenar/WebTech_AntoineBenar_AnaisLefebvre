@@ -106,7 +106,7 @@ telemetry:
 #
 # If this option isn't chosen clients may be added through the gRPC API.
 staticClients:
-- id: example-app
+- id: webtech-frontend
   redirectURIs:
   - 'http://127.0.0.1:5555/callback'
   name: 'Example App'
@@ -120,6 +120,16 @@ connectors:
 - type: mockCallback
   id: mock
   name: Example
+- type: github
+  # Required field for connector id.
+  id: github
+  # Required field for connector name.
+  name: GitHub
+  config:
+    # Credentials can be string literals or pulled from the environment.
+    clientID: d4d0ff88bd8a05242729
+    clientSecret: 3ca65211a63c76ec4b0b9bf5875fbd6d96cb6c8f
+    redirectURI: http://127.0.0.1:5556/dex/callback
 # - type: google
 #   id: google
 #   name: Google
