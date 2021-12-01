@@ -4,5 +4,5 @@ services:
     ports:
       - 5556:5556
     volumes:
-      - ./dex-config:/etc/dex
-    command: dex serve /etc/dex/config.yaml
+      - ./dex-config:/etc/dex-config
+    command: dex serve /etc/dex-config/config.yaml
