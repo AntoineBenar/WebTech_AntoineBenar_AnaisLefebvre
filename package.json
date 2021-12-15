@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-bootstrap": "^2.0.3",
+    "react-bootstrap-validation": "^0.1.11"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
+}
