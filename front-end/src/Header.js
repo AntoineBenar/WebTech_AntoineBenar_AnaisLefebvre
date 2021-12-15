@@ -3,9 +3,15 @@
 import { useContext } from 'react';
 // Layout
 import { useTheme } from '@mui/styles';
-import { IconButton, Link } from '@mui/material';
+import { Button, IconButton, Link } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Context from './Context';
+import {NavLink} from 'react-router-dom'; // In order to create a navbar
+import {ReactComponent as Logo} from '../src/icons/logo_chat.svg'  //import Logo in SVG format
+import { border } from '@mui/system';
+import './Header.css';
+
+
 
 const useStyles = (theme) => ({
   header: {
@@ -21,7 +27,7 @@ const useStyles = (theme) => ({
   },
   menu: {
     [theme.breakpoints.up('sm')]: {
-      display: 'none !important',
+      //display: 'none !important',     
     },
   }
 })
@@ -43,25 +49,35 @@ export default function Header({
   }
   return (
     <header css={styles.header}>
-      <IconButton
-        color="inherit"
-        aria-label="open drawer"
-        onClick={drawerToggle}
-        css={styles.menu}
-      >
-        <MenuIcon />
-      </IconButton>
-      Header
-      {
-        oauth ?
-          <span>
-            {oauth.email}
-            <Link onClick={onClickLogout}>logout</Link>
-          </span>
-        :
-          <span>new user</span>
-      }
-      
+       <nav>
+        <div className='div-header'>
+
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={drawerToggle}
+            css={styles.menu}
+          >
+            <MenuIcon />
+          </IconButton>
+          Header
+          {
+            oauth ?
+              <span>
+                {oauth.email}
+                <Link onClick={onClickLogout}>logout</Link>
+              </span>
+            :
+              <Button> new user</Button>
+          }
+              <img
+              src={Logo}
+              style={{ height: 53, width: 36 }}
+              //alt="Chat logo"
+            />
+
+          </div>
+      </nav>
     </header>
   );
 }

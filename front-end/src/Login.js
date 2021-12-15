@@ -5,6 +5,7 @@ import { useCookies } from 'react-cookie';
 import crypto from 'crypto'
 import qs from 'qs'
 import axios from 'axios'
+//import Button from 'react-bootstrap/Button'
 // Layout
 import { useTheme } from '@mui/styles';
 import { Link } from '@mui/material';
@@ -51,6 +52,7 @@ const useStyles = (theme) => ({
   },
 })
 
+
 const Redirect = ({
   config,
   codeVerifier,
@@ -71,11 +73,67 @@ const Redirect = ({
     window.location = url
   }
   return (
-    <div css={styles.root}>
+    /**
+     *   <div>
+
+    
+
+  <div className="d-grid gap-2">
+    <Button variant="primary" size="lg">
+      Block level button
+    </Button>
+  </div>
+
+</div>
+
+ <div css={styles.root}>
       <Link onClick={redirect} color="secondary">Login with OpenID Connect and OAuth2</Link>
+     </div>
+
+     * 
+     */
+     <div css={styles.root}>
+     <Link onClick={redirect} color="secondary">Login with OpenID Connect and OAuth2</Link>
     </div>
+
   )
 }
+/**
+ * 
+ * Tentative d'utiliser React Dom
+ function simulateNetworkRequest() {
+  return new Promise((resolve) => setTimeout(resolve, 2000));
+}
+
+function LoadingButton() {
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const handleClick = () => setLoading(true);
+
+  return (
+    <Button
+      variant="primary"
+      disabled={isLoading}
+      onClick={!isLoading ? handleClick : null}
+    >
+      {isLoading ? 'Loading…' : 'Click to load'}
+    </Button>
+  );
+}
+render(<LoadingButton />);
+ */
+
+
+
+
 
 const Tokens = ({
   oauth
