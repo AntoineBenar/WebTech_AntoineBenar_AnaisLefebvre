@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Context from './Context';
 import {NavLink} from 'react-router-dom'; // In order to create a navbar
 import {ReactComponent as Logo} from '../src/icons/logo_chat.svg'  //import Logo in SVG format
+import {ReactComponent as Logo2} from '../src/icons/logochat.svg'  //import Logo in SVG format
 import { border } from '@mui/system';
 import './Header.css';
 
@@ -51,7 +52,7 @@ export default function Header({
     <header css={styles.header}>
        <nav>
         <div className='div-header'>
-
+          <Logo2 style={{ height: 53, width: 36 }} />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -70,11 +71,6 @@ export default function Header({
             :
               <Button> new user</Button>
           }
-              <img
-              src={Logo}
-              style={{ height: 53, width: 36 }}
-              //alt="Chat logo"
-            />
 
           </div>
       </nav>
