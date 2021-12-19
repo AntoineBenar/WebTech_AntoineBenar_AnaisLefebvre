@@ -38,7 +38,7 @@ export default function Form({
       `http://localhost:3001/channels/${channel.id}/messages`
     , {
       content: content,
-      author: 'david',
+      author: 'Antoine',
     })
     addMessage(message)
     setContent('')

@@ -21,7 +21,7 @@ const styles = {
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#ffffff', //changer ici la couleur default: #565E71
+    backgroundColor: '#F3F2EF', //changer ici la couleur default: #565E71  ou  F5F5F5
     padding: '50px',
   },
 }
