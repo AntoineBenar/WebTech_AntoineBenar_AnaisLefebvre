@@ -21,7 +21,7 @@ export default function Footer() {
               <a href="http://127.0.0.1:3000/Oups">About Us </a>
               <a href="http://127.0.0.1:3000/Oups">Contact Us </a>
               <a href="http://127.0.0.1:3000/Oups">Contribute </a>
-              <a href="http://127.0.0.1:3000/Oups">Privacy Policy </a>>
+              <a href="http://127.0.0.1:3000/Oups">Privacy Policy </a>
             </nav>
             </ul>
           </div>

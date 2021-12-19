@@ -21,7 +21,7 @@ const styles = {
     }
   },
   background : {
-    backgroundColor: '#ffffff',
+    //backgroundColor: '#ffffff', //Que pour le "bloc" des channels
   },
 }
 

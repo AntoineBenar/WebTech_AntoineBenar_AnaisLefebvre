@@ -23,6 +23,7 @@ const useStyles = (theme) => ({
     display: 'flex',
     flexDirection: 'row',
     position: 'relative',
+
   },
   drawer: {
     width: '200px',
@@ -46,7 +47,8 @@ export default function Main() {
   return (
     <main css={styles.root}>
       <Drawer
-        PaperProps={{ style: { position: 'relative' } }}
+        theme = {{ paper: theme.paper }}
+        PaperProps={{ style: { position: 'relative' , background: '#ffffff'} }}
         BackdropProps={{ style: { position: 'relative' } }}
         ModalProps={{
           style: { position: 'relative' }
