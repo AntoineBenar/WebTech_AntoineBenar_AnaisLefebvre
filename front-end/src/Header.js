@@ -76,7 +76,7 @@ export default function Header({
           </IconButton>
           {
             oauth ?
-              <span style={{ color : 'black'}}>
+              <span style={{ color : 'black'}}> 
                 user logged : 
                 {oauth.email}
                 <Button onClick={onClickLogout}> logout</Button>
