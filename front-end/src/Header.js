@@ -7,9 +7,10 @@ import { Button, IconButton, Link } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Context from './Context';
 import {NavLink} from 'react-router-dom'; // In order to create a navbar
-import {ReactComponent as Logo} from '../src/icons/logo_chat.svg'  //import Logo in SVG format
-import {ReactComponent as Logo2} from '../src/icons/logochat.svg'  //import Logo in SVG format
-import { border } from '@mui/system';
+import {ReactComponent as Logo} from '../src/icons/logochat.svg'  //import Logo in SVG format
+import {ReactComponent as LogoGit} from '../src/icons/GithubLogo.svg'  //import Git Logo in SVG format
+import {ReactComponent as LogoTwitter} from '../src/icons/LogoTwitter.svg'
+import { border, borderLeft, borderRight, margin } from '@mui/system';
 import './Header.css';
 
 
@@ -48,11 +49,20 @@ export default function Header({
     e.stopPropagation()
     setOauth(null)
   }
+  const onClickGit = (e) => {
+    window.open("https://github.com/AntoineBenar/AntoineBenar", "_blank")
+  }
+  const onClickTw = (e) => {
+    window.open("https://twitter.com/TopDesTwittos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank") // on n'a pas encore de twitter effectivement =)
+  }
   return (
     <header css={styles.header}>
        <nav>
         <div className='div-header'>
-          <Logo2 style={{ height: 53, width: 36 }} />
+          <Logo
+           style={{ height: 53, width: 36, borderLeft: 5}} 
+           onClick={onClickLogout}
+           />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -61,16 +71,26 @@ export default function Header({
           >
             <MenuIcon />
           </IconButton>
-          Header
           {
             oauth ?
-              <span>
+              <span style={{ color : 'black'}}>
+                user logged : 
                 {oauth.email}
-                <Link onClick={onClickLogout}>logout</Link>
+                <Button onClick={onClickLogout}> logout</Button>
               </span>
             :
-              <Button> new user</Button>
+              <Button style={{color: 'black'}} > new user</Button>
           }
+
+          <LogoGit
+           style={{ height: 35, width: 25 }} 
+           onClick={onClickGit}
+           />
+          
+          <LogoTwitter
+           style={{ height: 35, width: 25 }} 
+           onClick={onClickTw}
+           />
 
           </div>
       </nav>

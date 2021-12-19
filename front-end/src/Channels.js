@@ -42,8 +42,10 @@ export default function Channels() {
   return (
     <ul css={styles.root}>
       <li css={styles.channel}>
-        <Link to="/channels" component={RouterLink}>Welcome</Link>
+        <li/>
+        <Link to="/channels" component={RouterLink}>Menu</Link>
       </li>
+      <br/>
       { channels.map( (channel, i) => (
         <li key={i} css={styles.channel}>
           <Link
@@ -54,6 +56,7 @@ export default function Channels() {
             }}
           >
             {channel.name}
+            <li/>
           </Link>
         </li>
       ))}
