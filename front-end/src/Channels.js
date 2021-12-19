@@ -12,16 +12,13 @@ import {useNavigate} from 'react-router-dom'
 const styles = {
   root: {
     '& a': {
+      color: 'black',
       padding: '.2rem .5rem',
       whiteSpace: 'nowrap', 
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      //backgroundColor :'#ffffff',
     }
-  },
-  background : {
-    //backgroundColor: '#ffffff', //Que pour le "bloc" des channels
   },
 }
 
@@ -47,7 +44,6 @@ export default function Channels() {
     fetch()
   }, [oauth, setChannels])
   return (
-    <div css={styles.background}>
     <ul css={styles.root}>
       <li css={styles.channel}>
         <li/>
@@ -71,6 +67,5 @@ export default function Channels() {
         </li>
       ))}
     </ul>
-    </div>
   );
 }

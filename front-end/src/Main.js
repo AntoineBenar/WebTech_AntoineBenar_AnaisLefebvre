@@ -48,7 +48,7 @@ export default function Main() {
     <main css={styles.root}>
       <Drawer
         theme = {{ paper: theme.paper }}
-        PaperProps={{ style: { position: 'relative' , background: '#ffffff'} }}
+        PaperProps={{ style: { position: 'relative' ,  background: 'linear-gradient(0.25turn, #ffffff, #373B44)' } }}
         BackdropProps={{ style: { position: 'relative' } }}
         ModalProps={{
           style: { position: 'relative' }
