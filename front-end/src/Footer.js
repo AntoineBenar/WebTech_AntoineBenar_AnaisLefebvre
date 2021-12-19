@@ -8,8 +8,6 @@ const styles = {
     backgroundColor: 'rgba(255,255,255,.3)',
     flexShrink: 0,
   },
-  
-  
 }
 
 export default function Footer() {
@@ -23,7 +21,7 @@ export default function Footer() {
               <a href="http://127.0.0.1:3000/Oups">About Us </a>
               <a href="http://127.0.0.1:3000/Oups">Contact Us </a>
               <a href="http://127.0.0.1:3000/Oups">Contribute </a>
-              <a href="http://127.0.0.1:3000/Oups">Privacy Policy </a>
+              <a href="http://127.0.0.1:3000/Oups">Privacy Policy </a>>
             </nav>
             </ul>
           </div>
@@ -31,6 +29,7 @@ export default function Footer() {
       </div>
       <div class="container">
           <div class="col-md-8 col-sm-6 col-xs-12">
+            <br/>
             <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by Antoine (dab)
             </p>
           </div>

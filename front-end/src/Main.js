@@ -17,7 +17,7 @@ import {
 
 const useStyles = (theme) => ({
   root: {
-    backgroundColor: '#373B44',
+    backgroundColor: '#373B44', // ICI LE STYLE AVEC CREATION CHANNELS ETC 
     overflow: 'hidden',
     flex: '1 1 auto',
     display: 'flex',

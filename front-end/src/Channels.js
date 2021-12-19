@@ -14,7 +14,14 @@ const styles = {
     '& a': {
       padding: '.2rem .5rem',
       whiteSpace: 'nowrap', 
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      //backgroundColor :'#ffffff',
     }
+  },
+  background : {
+    backgroundColor: '#ffffff',
   },
 }
 
@@ -40,9 +47,11 @@ export default function Channels() {
     fetch()
   }, [oauth, setChannels])
   return (
+    <div css={styles.background}>
     <ul css={styles.root}>
       <li css={styles.channel}>
         <li/>
+        <br/>
         <Link to="/channels" component={RouterLink}>Menu</Link>
       </li>
       <br/>
@@ -58,8 +67,10 @@ export default function Channels() {
             {channel.name}
             <li/>
           </Link>
+          <br/>
         </li>
       ))}
     </ul>
+    </div>
   );
 }

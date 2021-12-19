@@ -22,7 +22,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#F3F2EF', //changer ici la couleur default: #565E71  ou  F5F5F5
-    padding: '50px',
+    //padding: '50px', I don't like it =)
   },
 }
 

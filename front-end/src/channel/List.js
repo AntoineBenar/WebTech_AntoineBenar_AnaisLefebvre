@@ -35,7 +35,8 @@ const useStyles = (theme) => ({
   message: {
     padding: '.2rem .5rem',
     ':hover': {
-      backgroundColor: 'rgba(255,255,255,.05)',
+      backgroundColor: 'rgba(255,255,255,.05)', //JUSTE LE TEXYE
+      
     },
   },
   fabWrapper: {
@@ -48,6 +49,7 @@ const useStyles = (theme) => ({
     position: 'fixed !important',
     top: 0,
     width: '50px',
+    
   },
 })
 
