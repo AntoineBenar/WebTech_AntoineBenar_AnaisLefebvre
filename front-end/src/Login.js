@@ -16,6 +16,8 @@ import {
   useNavigate
 } from "react-router-dom";
 
+import { Button, IconButton } from '@mui/material';
+
 const base64URLEncode = (str) => {
   return str.toString('base64')
     .replace(/\+/g, '-')
@@ -73,67 +75,12 @@ const Redirect = ({
     window.location = url
   }
   return (
-    /**
-     *   <div>
-
-    
-
-  <div className="d-grid gap-2">
-    <Button variant="primary" size="lg">
-      Block level button
-    </Button>
-  </div>
-
-</div>
-
- <div css={styles.root}>
-      <Link onClick={redirect} color="secondary">Login with OpenID Connect and OAuth2</Link>
-     </div>
-
-     * 
-     */
      <div css={styles.root}>
-     <Link onClick={redirect} color="secondary">Login with OpenID Connect and OAuth2</Link>
+     <Button onClick={redirect} color="secondary">Login with OpenID Connect and OAuth2</Button>
     </div>
 
   )
 }
-/**
- * 
- * Tentative d'utiliser React Dom
- function simulateNetworkRequest() {
-  return new Promise((resolve) => setTimeout(resolve, 2000));
-}
-
-function LoadingButton() {
-  const [isLoading, setLoading] = useState(false);
-
-  useEffect(() => {
-    if (isLoading) {
-      simulateNetworkRequest().then(() => {
-        setLoading(false);
-      });
-    }
-  }, [isLoading]);
-
-  const handleClick = () => setLoading(true);
-
-  return (
-    <Button
-      variant="primary"
-      disabled={isLoading}
-      onClick={!isLoading ? handleClick : null}
-    >
-      {isLoading ? 'Loading…' : 'Click to load'}
-    </Button>
-  );
-}
-render(<LoadingButton />);
- */
-
-
-
-
 
 const Tokens = ({
   oauth

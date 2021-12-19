@@ -49,6 +49,9 @@ export default function Header({
     e.stopPropagation()
     setOauth(null)
   }
+  const onClickOups = (e) => {
+    window.open("http://127.0.0.1:3000/Oups", "_blank")
+  }
   const onClickGit = (e) => {
     window.open("https://github.com/AntoineBenar/AntoineBenar", "_blank")
   }
@@ -79,7 +82,7 @@ export default function Header({
                 <Button onClick={onClickLogout}> logout</Button>
               </span>
             :
-              <Button style={{color: 'black'}} > new user</Button>
+              <Button onClick={onClickOups} style={{color: 'black'}} > new user</Button>
           }
 
           <LogoGit
