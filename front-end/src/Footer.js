@@ -30,7 +30,7 @@ export default function Footer() {
       <div class="container">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <br/>
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by Antoine (dab)
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by Antoine (dab)
             </p>
           </div>
       </div>

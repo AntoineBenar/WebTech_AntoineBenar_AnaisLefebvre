@@ -20,8 +20,41 @@ const useStyles = (theme) => ({
   icon: {
     width: '30%',
     fill: '#fff',
+    //insert border
   }
 })
+/*
+const newchannel = ({
+  //vars
+}) => {
+
+  return (
+    <div></div>
+  )
+}
+
+const invitefriend = ({
+  //vars
+}) => {
+
+  return (
+    <div></div>
+  )
+}
+
+
+const settings = ({
+  //vars
+}) => {
+  //code
+  return (
+    <div></div>
+  )
+}
+onclick={newchannel()}
+onclick={settings()}
+onclick={invitefriend()}
+*/
 
 export default function Welcome() {
   const styles = useStyles(useTheme())
@@ -36,7 +69,7 @@ export default function Welcome() {
       >
         <Grid item xs>
           <div css={styles.card}>
-            <ChannelIcon css={styles.icon} />
+            <ChannelIcon css={styles.icon}  />
             <Typography color="textPrimary">
               Create channels
             </Typography>

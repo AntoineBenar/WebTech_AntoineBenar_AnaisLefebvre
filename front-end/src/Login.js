@@ -67,8 +67,6 @@ const useStylesUs = (theme) => ({
 })
 
 
-
-
 const Redirect = ({
   config,
   codeVerifier,
