@@ -7,6 +7,9 @@ import Popup from 'reactjs-popup';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import 'reactjs-popup/dist/index.css';
 /** @jsxImportSource @emotion/react */
+import {ReactComponent as LogoGit} from '../src/icons/GithubLogo.svg'  
+import {ReactComponent as LogoTwitter} from '../src/icons/LogoTwitter.svg'
+import {ReactComponent as LogoFb} from '../src/icons/FBLogo.svg'  
 import {useContext, useRef, useState, useEffect} from 'react';
 import axios from 'axios';
 // Local
@@ -167,7 +170,15 @@ const CreateChannelPopup = () => (
     )}
   </Popup>
 );
-
+const onClickGit = (e) => {
+  window.open("https://github.com/AntoineBenar/AntoineBenar", "_blank")
+}
+const onClickTw = (e) => {
+  window.open("https://twitter.com/TopDesTwittos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank") // on n'a pas encore de twitter effectivement =)
+}
+const onClickFb = (e) => {
+  window.open("https://www.facebook.com/poutou.philippe", "_blank") // <3
+}
 const InviteFriendsPopup = () => (
   <Popup
     trigger={
@@ -197,58 +208,33 @@ const InviteFriendsPopup = () => (
   >
     {close => (
       <div className="modal">
-        <button className="close" onClick={close}>
-          &times;
-        </button>
-        <div className="header"> Modal Title </div>
-        <div className="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a
-          nostrum. Dolorem, repellat quidem ut, minima sint vel eveniet
-          quibusdam voluptates delectus doloremque, explicabo tempore dicta
-          adipisci fugit amet dignissimos?
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          sit commodi beatae optio voluptatum sed eius cumque, delectus saepe
-          repudiandae explicabo nemo nam libero ad, doloribus, voluptas rem
-          alias. Vitae?
-        </div>
+      <button className="close" onClick={close}>
+        &times;
+      </button>
+      <div className="header"> <b>Invite your friends</b></div>
+      <div className="content">
+        <br />
+        Here, you will be able to invite your friends to join a channel! 
+      </div>
+      <br/>
+      <div>
+        Invite trough :           
+        <LogoGit
+           style={{ height: 35, width: 25 }} 
+           onClick={onClickGit}
+        />
+          
+        <LogoTwitter
+           style={{ height: 35, width: 25 }} 
+           onClick={onClickTw}
+        />
+       <LogoFb
+           style={{ height: 35, width: 25 }} 
+           onClick={onClickFb}
+        />
+      <br/>
+      </div>
         <div className="actions">
-          <Popup
-            trigger={
-              <button type="button" className="button">
-                Menu Demo
-              </button>
-            }
-            position="top center"
-            closeOnDocumentClick
-            contentStyle={{ padding: '0px' }}
-            nested
-            keepTooltipInside
-          >
-            <div className="popup-menu">
-              <div className="menu-item"> Menu item 1</div>
-              <div className="menu-item"> Menu item 2</div>
-              <div className="menu-item"> Menu item 3</div>
-              <Popup
-                trigger={<div className="menu-item"> Sup Menu </div>}
-                position="right top"
-                on="hover"
-                closeOnDocumentClick
-                mouseLeaveDelay={300}
-                mouseEnterDelay={0}
-                contentStyle={{ padding: '0px', border: 'none' }}
-                arrow={false}
-                keepTooltipInside
-              >
-                <div className="popup-menu">
-                  <div className="menu-item"> item 1</div>
-                  <div className="menu-item"> item 2</div>
-                  <div className="menu-item"> item 3</div>
-                </div>
-              </Popup>
-              <div className="menu-item"> Menu item 4</div>
-            </div>
-          </Popup>
           <button
             type="button"
             className="button"
@@ -266,6 +252,7 @@ const InviteFriendsPopup = () => (
 );
 
 const SettingsPopup = () => (
+  
   <Popup
     trigger={
 
@@ -298,23 +285,20 @@ const SettingsPopup = () => (
         <button className="close" onClick={close}>
           &times;
         </button>
-        <div className="header"> Modal Title </div>
+        <div className="header"> <b>Settings</b></div>
         <div className="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a
-          nostrum. Dolorem, repellat quidem ut, minima sint vel eveniet
-          quibusdam voluptates delectus doloremque, explicabo tempore dicta
-          adipisci fugit amet dignissimos?
           <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          sit commodi beatae optio voluptatum sed eius cumque, delectus saepe
-          repudiandae explicabo nemo nam libero ad, doloribus, voluptas rem
-          alias. Vitae?
+          Welcome in the settings 
         </div>
-        <div className="actions">
-          <Popup
+        <br/>
+        <div>
+          Change your Avatar : <button>Chose Avatar</button>
+        </div>
+       <br/>
+        <Popup
             trigger={
               <button type="button" className="button">
-                Menu Demo
+                Language
               </button>
             }
             position="top center"
@@ -324,11 +308,11 @@ const SettingsPopup = () => (
             keepTooltipInside
           >
             <div className="popup-menu">
-              <div className="menu-item"> Menu item 1</div>
-              <div className="menu-item"> Menu item 2</div>
-              <div className="menu-item"> Menu item 3</div>
+              <div className="menu-item"> English (current)</div>
+              <div className="menu-item"> French</div>
+              <div className="menu-item"> Chineese</div>
               <Popup
-                trigger={<div className="menu-item"> Sup Menu </div>}
+                trigger={<div className="menu-item"> Other </div>}
                 position="right top"
                 on="hover"
                 closeOnDocumentClick
@@ -339,14 +323,23 @@ const SettingsPopup = () => (
                 keepTooltipInside
               >
                 <div className="popup-menu">
-                  <div className="menu-item"> item 1</div>
-                  <div className="menu-item"> item 2</div>
-                  <div className="menu-item"> item 3</div>
+                  <div className="menu-item"> Japaneese</div>
+                  <div className="menu-item"> Spanish</div>
+                  <div className="menu-item"> Italian</div>
                 </div>
               </Popup>
-              <div className="menu-item"> Menu item 4</div>
             </div>
           </Popup>
+        <br/>
+
+
+        <div>
+          <br/>
+          Join the Dark Side (night mode): <></> 
+          <input type="checkbox"></input>
+        </div>
+        <br/>
+        <div className="actions">
           <button
             type="button"
             className="button"

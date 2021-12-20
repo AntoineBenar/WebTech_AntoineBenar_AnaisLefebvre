@@ -27,7 +27,11 @@ or yarn
  yarn add formik
 
 
+I also use, as recommanded, Gravatar : installing :
+ 
+npm install --save react-gravatar
+
  Somes visuals from the project working locally : 
-  ![Screenshot](Visual_project_1.jpg)
+  ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_1.jpg")
   ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_2.jpg")
  

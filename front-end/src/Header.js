@@ -12,6 +12,7 @@ import {ReactComponent as LogoGit} from '../src/icons/GithubLogo.svg'  //import 
 import {ReactComponent as LogoTwitter} from '../src/icons/LogoTwitter.svg'
 import { border, borderLeft, borderRight, margin } from '@mui/system';
 import './Header.css';
+import Gravatar from 'react-gravatar'
 
 
 
@@ -66,19 +67,14 @@ export default function Header({
            style={{ height: 53, width: 36, borderLeft: 5}} 
            onClick={onClickLogout}
            />
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={drawerToggle}
-            css={styles.menu}
-          >
-            <MenuIcon />
-          </IconButton>
           {
             oauth ?
               <span style={{ color : 'black'}}> 
                 user logged :   
                 {oauth.email}
+                <> </>
+                <Gravatar email={oauth.email} size={20}/>
+                <> </>
                 <Button onClick={onClickLogout}> logout</Button>
               </span>
             :
