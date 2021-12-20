@@ -28,6 +28,6 @@ or yarn
 
 
  Somes visuals from the project working locally : 
-  ![alt text](./icons/Visual_project_1.jpg?raw=true "Title")
-  ![alt text](./icons/Visual_project_2.jpg?raw=true "Title")
+  ![alt text](./icons/Visual_project_1.jpg?raw=true "Visual_project_1.jpg")
+  ![alt text](./icons/Visual_project_2.jpg?raw=true "Visual_project_2.jpg")
  
