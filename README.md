@@ -35,7 +35,7 @@ More, I unfortunatly lost a few hours of work, as my computed decided to bluescr
 - - yarn add formik
 
 
-- - I also use, as recommanded, Gravatar : installing :
+- I also use, as recommanded, Gravatar : 
 
 - - npm install --save react-gravatar
 
