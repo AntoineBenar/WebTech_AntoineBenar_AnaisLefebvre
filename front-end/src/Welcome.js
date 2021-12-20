@@ -12,6 +12,7 @@ import axios from 'axios';
 // Local
 import Context from './Context'
 import { useNavigate, useParams } from 'react-router-dom'
+//import { channels } from '../../back-end/lib/db';
 
 //import "../back-end/lib/db.js" Seems i can't import back end that easily, i have to use exports from b-e
 
@@ -67,8 +68,8 @@ const ChannelForm = () => (
       onSubmit={(values, { setSubmitting }) => {
         // post data to server
 
-      
-
+        //id=Math.floor(Math.random() * 256); once again, db dosn'isn't in /src so it dosn't work properly
+        //channels.create();
 
 
         alert(JSON.stringify(values, null, 2));
@@ -112,7 +113,6 @@ const ChannelForm = () => (
     </Formik>
   </>
 );
-
 
 const CreateChannelPopup = () => (
   <Popup
@@ -422,8 +422,6 @@ export default function Welcome() {
 
   TRIES TO CREATE A NEW CHANNEL (doesn't work yet)
 */
-
-  //const styles = useStyles(useTheme())
   return (
     
     <div css={styles.root}>
