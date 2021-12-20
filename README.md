@@ -2,7 +2,9 @@
 
 # My feelings about this project
 
-This project was a great way to discover all the complexity of a large-envergure project, using React, even if the setup of Dex and Docker has been pretty complicated and bugged at the begining. Z
+This project was a great way to discover all the complexity of a large-envergure project, using React, even if the setup of Dex and Docker has been pretty complicated and bugged at the begining.
+
+For now, the "empty links" as About Us, Contact Us ... in the project redirect on the Oups page, beacause I didn't have the time to create those simple pages.
 
 I am not fully satisfied of the advancement of the project. A lot of work and efforts have been made into it, however, it is not totally completed.
 
@@ -59,3 +61,4 @@ More, I unfortunatly lost a few hours of work, as my computed decided to suddent
   ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_1.jpg")
   ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_2.jpg")
  
+ (I don't think those links work, i don't know why, but I added those visuals in ./front-end/src/icons as Visual_project_1.jpg and Visual_project_2.jpg)
