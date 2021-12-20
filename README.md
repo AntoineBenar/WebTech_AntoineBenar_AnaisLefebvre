@@ -28,6 +28,6 @@ or yarn
 
 
  Somes visuals from the project working locally : 
-  ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_1.jpg")
+  ![Screenshot](Visual_project_1.jpg)
   ![alt text](https://github.com/AntoineBenar/WebTech_AntoineBenar_AnaisLefebvre/blob/main/README.md?raw=true "Visual_project_2.jpg")
  
